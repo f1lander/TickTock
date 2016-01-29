@@ -9,10 +9,10 @@ in the localstorage of browser.
 
 How it's work?
 ---------------------
-1.Click on time picker "Alarm"
-2.Select the hour
-3.Select the minutes (step in 5 minutes)
-4.Click on "OK"
-5.Click on "Set alarm" 
+* 1.Click on time picker "Alarm"
+* 2.Select the hour
+* 3.Select the minutes (step in 5 minutes)
+* 4.Click on "OK"
+* 5.Click on "Set alarm" 
 
 AUTHOR: Edax Uclés 
