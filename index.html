@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TickTock</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+     <link rel="stylesheet" href="css/angular-timepicker.css">
+    <link rel="stylesheet" href="../bower_components/AngularJS-Toaster/toaster.css" />
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css" />
+       
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+   
+    <link rel="stylesheet" href="css/main.css">
+    
+  
+    <!-- endbuild -->
+  </head>
+  <body ng-app="clocky">
+    <toaster-container></toaster-container>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div>
+      <div ui-view></div>
+    </div>
+        
+    <!-- bower:js -->
+     
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../js/angular-ui-router.js"></script>
+       
+      
+    <script src="../js/angular-timepicker.js"></script>
+ 
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/AngularJS-Toaster/toaster.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../bower_components/angular-material/angular-material.js"></script>
+    <script src="../bower_components/ngstorage/ngstorage.min.js"></script>
+    <script src="../bower_components/angular-audio/app/angular.audio.js"></script>
+
+    <!-- endbower -->
+ 
+
+    <!-- Scripts application -->
+    <script src="app/app.js"></script>   
+    <script src="app/controllers.js"></script>  
+    <script src="app/services.js"></script>
+    <script src="app/directives.js"></script>
+
+  </body>

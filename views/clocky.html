@@ -1,0 +1,55 @@
+<div>
+	<div class="row">
+		
+            <div class="alarm">
+                <div layout="row" layout-align="left center">                   
+                    
+                      <div>
+                       <md-input-container class="md-warn">
+                            <label>Alarm</label>
+                            <input mdc-datetime-picker date="false" time="true" type="text" id="time" short-time="true"
+                                placeholder="Time"
+                                min-date="minDate"
+                                format="hh:mm a"
+                                ng-model="myTime">
+                        </md-input-container>
+                    </div>
+                    <div>
+                        <md-button class="md-fab md-mini md-primary md-warn" aria-label="Nuevo" ng-click="setAlarm()">
+                        <md-icon md-svg-src="img/alarm36.svg"></md-icon>
+                                <md-tooltip md-visible="false" md-direction="top">
+                                    Set Alarm                                    
+                                </md-tooltip>
+                        </md-button>
+                    </div>
+                    <div>
+                        <md-button ng-show="isPlaying" class="md-fab md-mini md-primary md-warn" aria-label="Nuevo" ng-click="stopAlarm()">
+                        <md-icon md-svg-src="img/stop.svg"></md-icon>
+                                <md-tooltip md-visible="false" md-direction="top">
+                                    Stop Alarm                                    
+                                </md-tooltip>
+                        </md-button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clocky">
+        	<div class="outer_face">
+                <div class="marker oneseven"></div>
+                <div class="marker twoeight"></div>
+                <div class="marker fourten"></div>
+                <div class="marker fiveeleven"></div>
+
+                    <div class="inner_face">
+                    <div class="hand hour" hour></div>
+                        <div class="hand minute" minute></div>
+                        <div class="hand second" second></div>
+                    </div>
+            
+            </div>
+            </div>
+
+		</div>	
+	
+
+</div>
