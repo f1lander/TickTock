@@ -12,7 +12,7 @@ How it's work?
 1.Click on time picker "Alarm"
 2.Select the hour
 3.Select the minutes (step in 5 minutes)
-4.Click in "OK"
-5.Click in "Set alarm" 
+4.Click on "OK"
+5.Click on "Set alarm" 
 
-AUTHOR: Edax Uclés - Web Developer 
+AUTHOR: Edax Uclés 
