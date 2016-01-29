@@ -14,3 +14,5 @@ How it's work?
 3.Select the minutes (step in 5 minutes)
 4.Click in "OK"
 5.Click in "Set alarm" 
+
+AUTHOR: Edax Uclés - Web Developer 
