@@ -29,7 +29,7 @@ app.controller('ClockyCtrl', function($scope,ngAudio,$localStorage, $filter, $in
         
          $scope.$storage.timeAlarm = $filter('date')($scope.myTime, 'shortTime'); 
          alarm = $interval(verify, 1000);
-         toaster.pop('success', "The alarm was setting", "at: "+ $scope.$storage.timeAlarm );     
+         toaster.pop('success', "The alarm was set at:", $scope.$storage.timeAlarm );     
          console.log( "Seteada: ",   $scope.$storage.timeAlarm );
      };
      
