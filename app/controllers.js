@@ -3,7 +3,7 @@ app.controller('ClockyCtrl', function($scope,ngAudio,$localStorage, $filter, $in
     
      $scope.$storage = $localStorage;
      $scope.isPlaying = false;
-       $scope.audio = ngAudio.load('chewy.wav'); 
+     $scope.audio = ngAudio.load('chewy.wav'); 
      var alarm;
       
      var verify = function () {         
@@ -11,6 +11,7 @@ app.controller('ClockyCtrl', function($scope,ngAudio,$localStorage, $filter, $in
            if(theTime == $scope.$storage.timeAlarm){
                 $scope.audio.play();
                  $scope.isPlaying = true;
+                 $interval.cancel(alarm);
                  toaster.pop('success', "Chewy!!","Uuuuuuurrrrrrr ");   
            }
      };
@@ -34,7 +35,7 @@ app.controller('ClockyCtrl', function($scope,ngAudio,$localStorage, $filter, $in
      };
      
       $scope.stopAlarm = function () {         
-         $interval.cancel(alarm);
+       
          $scope.audio.restart();
           $scope.isPlaying = false;         
      };
